@@ -22,10 +22,121 @@
         </li>
       </ul>
     </header>
-    <footer class="main footer">
+    <main>
+      <img src="img/backgroundphoto.svg" width="1200" height="217" alt="подложка фильтра">
       
+      <section>
+        <h1>Поиск жилья в Седоне</h1>
+      <!--скрыть заголовок-->
+      
+        
+        <!--<h2>Поисковый фильтр</h2>-->
+        <form method="get" action="https://echo.htmlacademy.ru/courses">
+          <fieldset>
+            <Legend>Инфраструктура:</Legend>
+            <ul>
+              <li><input type="checkbox" name="swimming-pool" id="filter-swimming-pool">
+                  <label for="filter-swimming-pool">БАССЕЙН</label></li>
+              <li><input type="checkbox" name="parking" id="filter-parking">
+                  <label for="filter-parking">ПАРКОВКА</label></li>
+              <li><input type="checkbox" name="wifi" id="filter-wifi">
+                  <label for="filter-wifi">WI-FI</label></li>
+            </ul>
+          </fieldset>
+          
+          
+          <fieldset>
+            <Legend>Тип жилья</Legend>
+            <ul>
+              <li><input type="checkbox" name="hotel" id="filter-hotel">
+                  <label for="filter-hotel">ГОСТИНИЦА</label></li>
+              <li><input type="checkbox" name="motel" id="filter-motel">
+                  <label for="filter-motel">ОТЕЛЬ</label></li>
+              <li><input type="checkbox" name="apartments" id="filter-apartments">
+                  <label for="filter-apartments">АПАРТАМЕНТЫ</label></li>
+              </ul>
+          </fieldset>
+          <fieldset>
+            <Legend>Стоимость в сутки,&#8381;:</Legend>
+            <table>
+              <tr>
+                <td>от 0</td>
+                <td>до 3000</td>
+              </tr>
+            </table>
+            
+            <input type="range" min="0" max="3000" step="1" value="1">
+          </fieldset>
+          <button type="submit">Показать</button>
+
+
+
+        </form>
+      </section>
+      <section>
+        <h2>НАЙДЕНО: 3</h2>
+        <ul>
+          <h2>СОРТИРОВКА:</h2>
+          <li><button type="button">ПО ЦЕНЕ</button></li>
+          <li><button type="button">ПО ТИПУ</button></li>
+          <li><button type="button">ПО РЕЙТИНГУ</button></li>
+          <li><button type="button">&#9650;</button></li>
+          <li><button type="button">&#9660;</button></li>
+
+        </ul>
+        
+          
+        <ul>
+          <li>
+            <h2>Amara Resort & Spa</h2>
+            <p>ГОСТИНИЦА ОТ 4000 &#8381;</p>
+            <img src="img/AmaraResort.png" width="135" height="90" alt="AmaraResort">
+            <button type="button">ПОДРОБНЕЕ</button>
+            <button type="button">ЗАБРОНИРОВАТЬ</button>
+            <p>&#9733;&#9733;&#9733;&#9733; РЕЙТИНГ: 8,5</p>
+          </li>
+          <li>
+            <h2>Desert Quail Inn</h2>
+            <p>МОТЕЛЬ ОТ 3000 &#8381;</p>
+            <img src="img/DesertQuailInn.png" width="135" height="90" alt="Desert Quail Inn">
+            <button type="button">ПОДРОБНЕЕ</button>
+            <button type="button">ЗАБРОНИРОВАТЬ</button>
+            <p>&#9733;&#9733;&#9733; РЕЙТИНГ: 8,9</p>
+          </li>
+          <li>
+            <h2>Villas at Poco Diablo</h2>
+            <p>АПАРТАМЕНТЫ ОТ 2000 &#8381;</p>
+            <img src="img/VillasatPocoDiablo.png" width="135" height="90" alt="Villas at Poco Diablo">
+            <button type="button">ПОДРОБНЕЕ</button>
+            <button type="button">ЗАБРОНИРОВАТЬ</button>
+            <P>&#9733;&#9733; РЕЙТИНГ: 9,2</P>
+          </li>
+        </ul>
+      </section>
+    </main>
+      
+    <footer class="main footer">
+      <div>
+        <h2>контакты</h2>
+        <!--скрываемый заголовок для поисковых систем-->
+        <p>
+          #visitSEDONA
+          <br><a href="tel:+7800555-86-28">+7 800 555-86-28</a>
+        </p>
+        <ul>
+          <li> <a href="#">twitter</a>
+          <li> <a href="#">facebook</a>
+          <li> <a href="#">youtube</a>  
+
+        </ul>
+        <p>
+          Website by
+          <img src="img/htmlAcademy" width="115" height="33" alt="логотип htmlAcademy">
+        </p>
+
+      </div>
 
     </footer>
       
-
+  </body>
 </html>
