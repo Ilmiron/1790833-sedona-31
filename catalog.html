@@ -57,19 +57,13 @@
               </ul>
           </fieldset>
           <fieldset>
-            <Legend>Стоимость в сутки,&#8381;:</Legend>
-            <input id="input-price" type="text" min="1" max="100" step="1"
-         >
-            <!--<table>
-              <tr>
-                <td>от 0</td>
-                <td>до 3000</td>
-              </tr>
-            </table>-->
-            
-            <input type="range" min="0" step="1" value="1">
+
+            <input type="range" min="0" max="" step="1">
+            <label>от<input type="number" name="min-price"></label>
+            <label>до<input type="number" name="max-price"></label>
+            <button type="submit">Показать</button>
           </fieldset>
-          <button type="submit">Показать</button>
+          
 
 
 
@@ -79,11 +73,11 @@
         <h2>НАЙДЕНО: 3</h2>
         <h2>СОРТИРОВКА:</h2>
         <ul>
-          <li><button type="button">ПО ЦЕНЕ</button></li>
-          <li><button type="button">ПО ТИПУ</button></li>
-          <li><button type="button">ПО РЕЙТИНГУ</button></li>
-          <li><button type="button">&#9650;</button></li>
-          <li><button type="button">&#9660;</button></li>
+          <li><a href="#"><button type="button">ПО ЦЕНЕ</button></a></li>
+          <li><a href="#"><button type="button">ПО ТИПУ</button></a></li>
+          <li><a href="#"><button type="button">ПО РЕЙТИНГУ</button></a></li>
+          <li><a href="#"><button type="button">&#9650;</button></a></li>
+          <li><a href="#"><button type="button">&#9660;</button></a></li>
         </ul>
         <ul>
           <li>
