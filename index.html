@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
@@ -8,61 +8,69 @@
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <!--Шапка сайта-->
-      <nav>
+      <nav class="main-nav">
         <!--навигация по сайту--> 
-      <ul>
+      <ul class="site-nav">
         <li><a href="blank.html">ИНФОРМАЦИЯ</a></li>
         <li><a href="blank.html">ФОТО И ВИДЕО</a></li>
         <li><a href="blank.html">КАРТА ШТАТА</a></li>
         <li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
       </ul>
       </nav>
-      <ul>
+      <ul class="main-header-logo">
+        <!--логотип-->
         <li>
-          <a><img src="img/logo.svg" width="138" height="70" alt="логотип"></a>
+          <a >
+            <img src="img/logo.svg" width="138" height="70" alt="логотип">
+          </a>
         </li>
       </ul>
     </header>
-    <main>
-        <img src="img/backgroundphoto" width="1200" height="509" alt="подложка">
+    <main class="container">
+        <img class="backgroundphoto-index" src="img/backgroundphoto.jpg" width="1200" height="509" alt="подложка">
         <!--изображение подложка-->
-        <section><h1>Welcome to the gorgerous Sedona</h1>
-                 <!--скрываемый заголовок для поисковых систем, на его месте будут буквы картинки-->
-                 <h1>because the grand canyon sucks</h1>
-                 <!--скрываемый заголовок для поисковых систем, на его месте будут буквы картинки-->
-                 <h2>Седона — небольшой городок в Аризоне, заслуживающий большего</h2>
-                 <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p></section>
+        <section class="title-img">
+          <h1>Welcome to the gorgerous Sedona</h1>
+          <!--скрываемый заголовок для поисковых систем, на его месте будут буквы картинки-->
+          <h1>because the grand canyon sucks</h1>
+          <!--скрываемый заголовок для поисковых систем, на его месте будут буквы картинки-->
+          <h2 class="slogan-site">Седона — небольшой городок в Аризоне, заслуживающий большего</h2>
+          </section>
+
+          
         
-        <section>
-         <ol>
-           <li><h2>НАСТОЯЩИЙ ГОРОДОК</h2> <img src="img/img1.jpg" width="800" height="256" alt="уютные дома"> 
-            <p>Седона — не аттракцион для туристов, тамтечёт своя жизнь</p></li>
+        <section class="advantages">
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+         <ol class="list-advantages">
+           <li class="advatages-image-item"><h2>НАСТОЯЩИЙ ГОРОДОК</h2> <img src="img/img1.jpg" width="800" height="256" alt="уютные дома"> 
+            <p>Седона — не аттракцион для туристов, тамтечёт своя жизнь</p></li> <!--номер 1 с картинкой-->
            
-           <li><h2>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2><img src="img/img2.jpg" width="800" height="256" alt="естесвенный каменый мост на фоне бескрайних просторов">
-             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+           <li class="advatages-image-item"><h2>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2><img src="img/img2.jpg" width="800" height="256" alt="естесвенный каменый мост на фоне бескрайних просторов">
+             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p> <!--номер 2 с картинкой-->
            </li>
-           <li><h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2> <p>все достопримечательности находятся очень близко</p></li>
-           <li><h2>КРАСИВАЯ ДОРОГА</h2><p>ехать в седону из лас-вегаса совсем не скучно!</p></li>
-           <li><h2>МАЛО ТУРИСТОВ</h2><p>большинство едет в гранд каньон и толпится там</p></li>
+           <li class="box-image-item"><h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2> <p>все достопримечательности находятся очень близко</p></li>
+           <li class="box-image-item"><h2>КРАСИВАЯ ДОРОГА</h2><p>ехать в седону из лас-вегаса совсем не скучно!</p></li>
+           <li class="box-image-item"><h2>МАЛО ТУРИСТОВ</h2><p>большинство едет в гранд каньон и толпится там</p></li>
+           <!--без картинок-->
          </ol>
          </section>
-         <section>
-         <ul>
-           <li><h2>ЖИЛЬЁ</h2> <img src="img/icon1" width="75" height="72" alt="домик"> 
+         <section class="thumb">
+         <ul class="thumb-list">
+           <li class="thumb-item"><h2>ЖИЛЬЁ</h2> <img src="img/icon1" width="75" height="72" alt="домик"> 
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
-           <li><h2>ЕДА</h2> <img src="img/icon3" width="75" height="70" alt="сочный бургер"> 
+           <li class="thumb-item"><h2>ЕДА</h2> <img src="img/icon3" width="75" height="70" alt="сочный бургер"> 
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p></li>
-           <li><h2>СУВЕНИРЫ</h2> <img src="img/icon2" width="64" height="77" alt="подарочек"> 
+           <li class="thumb-item"><h2>СУВЕНИРЫ</h2> <img src="img/icon2" width="64" height="77" alt="подарочек"> 
             <p>Не только китайского, но и местного производства!</p></li>
          </ul>
         </section>
-        <section>
+        <section class="site-search">
           <h3>ЗАИНТЕРЕСОВАЛИСЬ?</h3>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+          <button type="button" class="button-search">ПОИСК ГОСТИНИЦЫ В седоне</button>
         </section>
         
         <img src="img/map.jpg" width="1199" height="594" alt="карта штата">
@@ -82,15 +90,15 @@
 
 
     </main>
-    <footer class="main footer">
-      <div>
+    <footer class="main-footer">
+      <div class="foother-contact">
         <h3>контакты</h3>
         <!--скрываемый заголовок для поисковых систем-->
         <p>
           #visitSEDONA
-          <br><a href="tel:+7800555-86-28">+7 800 555-86-28</a>
+          <br><a class="contacts-phone" href="tel:+7800555-86-28">+7 800 555-86-28</a>
         </p>
-        <ul>
+        <ul class="contacts-social">
           <li> <a href="#">twitter</a>
           <li> <a href="#">facebook</a>
           <li> <a href="#">youtube</a>  
@@ -98,7 +106,7 @@
         </ul>
         <p>
           Website by
-          <a href="https://htmlacademy.ru/"><img src="img/logohtmlacademy.svg" width="115" height="33" alt="логотип htmlAcademy"></a>
+          <a class="foother-logo" href="https://htmlacademy.ru/"><img src="img/logohtmlacademy.svg" width="115" height="33" alt="логотип htmlAcademy"></a>
         </p>
 
       </div>
