@@ -1,0 +1,183 @@
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-blue: #81B3D2;
+  --basic-gray: #EEEEEE;
+  --special: #766357;
+  --basic-dark: #888888;
+  --foother-color: rgba(255, 255, 255, 0.9);
+}
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-dark) ;
+}
+a {text-decoration: none;}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Навигация*/
+.main-nav {
+
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white)
+}
+.site-nav {
+  list-style: none;
+  }
+.site-nav a {color: var(--basic-black);
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+/*шапка*/
+/*Тело*/
+.slogan-site {
+  background-color: var(--basic-white);
+  text-align: center;
+}
+.slogan-site b {
+  font-size: 21px;
+  line-height: 26px;
+}
+.slogan-site span {
+  font-size: 14px;
+  line-height: 26px;
+}
+/*синий блок слева*/
+.block-left {
+  background-color: var(--basic-white);
+  color: var(--basic-white);
+  text-align: center;
+}
+.block-left b {
+
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+}
+/*Блок с иконками*/
+.thumb-list
+{
+  background-color: var(--basic-white);
+  text-align: center;
+}
+.thumb-list ul
+{
+
+  list-style: none;
+  color: var(--basic-black);
+  text-align: center;
+}
+.thumb-list h2
+{
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+}
+.thumb-list p
+{
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+}
+/* Синий блок справа*/
+.block-right {
+  background-color: var(--basic-white);
+  color: var(--basic-white);
+  text-align: center;
+}
+.block-right b {
+
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+}
+/*серый блок*/
+.box-item
+{
+  background-color: var(--basic-gray);
+}
+.box-item ul
+{
+  list-style: none;
+  text-align: center;
+}
+.box-item b
+{
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+}
+.box-item span
+{
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+ }
+  /*блок с кнопкой поиска*/
+
+.box-button
+{
+  background-color: var(--basic-white);
+  text-align: center;
+}
+.box-button b
+{
+  text-align: center;
+  font-size: 30px;
+  line-height: 24px;
+}
+.box-button span
+{
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+.button {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight:700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--special);
+  border: none;
+}
+/*футер*/
+
+.main-footer {
+  background-color: var(--foother-color);
+  background-image: url("img/pattern-dark.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+
+
+
+
+
+
+
+/*.img-block-left
+{
+ display:block;
+ margin:auto;
+}*/
