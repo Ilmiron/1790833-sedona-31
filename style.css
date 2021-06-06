@@ -3,10 +3,11 @@
   --basic-black: #000000;
   --basic-blue: #81B3D2;
   --basic-gray: #EEEEEE;
-  --basic-dark: #888888;
+  --background-color: #F2F2F2;
   --button: #766357;
   --button-hover: #604E43;
   --button-active: #503E33;
+  --button-visibility: rgba(255, 255, 255, 0.3);
   --social-button-hover: #669EC0;
   --social-button-active: #5496BD;
 
@@ -22,7 +23,7 @@
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-dark) ;
+  background-color: var(--background-color);
 }
 a {text-decoration: none;}
 img {
@@ -172,7 +173,7 @@ background-color: var(--button-hover);
 .button:active
 {
   background-color: var(--button-active);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--button-visibility);
 }
 
 
@@ -229,16 +230,3 @@ background-color: var(--social-button-hover);
 {
   background-color: var(--social-button-active) ;
 }
-
-
-
-
-
-
-
-
-/*.img-block-left
-{
- display:block;
- margin:auto;
-}*/
