@@ -14,7 +14,12 @@
   --button-detail-hover: #669EC0;
   --foother-color: rgba(255, 255, 255, 0.9);
 }
+.page
+{
+  height: 100%;
+}
 .page-body {
+  max-width: 1200px;
   min-width: 960px;
   margin: 0;
   padding: 0;
@@ -25,22 +30,71 @@
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--background-color);
+  min-height: 100%;
+display: grid;
+grid-template-rows: min-content 1fr min-content;
+align-content: start;
 }
-a {text-decoration: none;}
+a
+{
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
-/* Навигация*/
-.main-nav {
+/*Гриды*/
 
+
+
+/* Навигация*/
+/*лого*/
+
+.main-nav {
+  display: grid;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
-  background-color: var(--basic-white)
+  background-color: var(--basic-white);
+  /*outline: 5px solid rgba(27, 33, 150, 0.3);
+  outline-offset: -5px;*/
+}
+.main-header-logo
+{
+  grid-template-columns: min-content;
+  justify-self: center;
+  /*outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;*/
+}
+.main-navigation-wrapper
+{
+background-color: var(--basic-white);
+display: grid;
+grid-template-columns: 1fr;
+width: 1200px;
+margin: 0 auto;
+padding: 0 10px;
+
+}
+
+.center
+{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 .site-nav {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight:700;
+  margin: 0;
+  padding: 0;
+  /*outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;*/
   list-style: none;
+  /*display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
   }
 .site-nav a {color: var(--basic-black);
 }
@@ -52,10 +106,18 @@ img {
   margin: -1px;
 }
 /*шапка*/
+.main-header
+{
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+
+}
 /*Тело*/
 .slogan-site {
   background-color: var(--basic-white);
   text-align: center;
+  padding-top: 43px;
+  padding-bottom: 51px;
 }
 .slogan-site b {
   font-size: 21px;
@@ -65,17 +127,30 @@ img {
   font-size: 14px;
   line-height: 26px;
 }
+
 /*синий блок слева*/
-.block-left {
+.block-left
+{
+
   background-color: var(--basic-white);
   color: var(--basic-white);
   text-align: center;
+  margin: 0;
+
+
 }
 .block-left b {
 
   text-align: center;
   font-size: 21px;
   line-height: 21px;
+}
+.block-l
+{
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
 }
 /*Блок с иконками*/
 .thumb-list
@@ -89,6 +164,10 @@ img {
   list-style: none;
   color: var(--basic-black);
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 60px;
+  padding-bottom: 82px;
 }
 .thumb-list h2
 {
@@ -108,6 +187,12 @@ img {
   color: var(--basic-white);
   text-align: center;
 }
+.block-r
+{
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 .block-right b {
 
   text-align: center;
@@ -123,6 +208,10 @@ img {
 {
   list-style: none;
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 47px;
+  padding-bottom: 54px;
 }
 .box-item b
 {
@@ -142,6 +231,9 @@ img {
 {
   background-color: var(--basic-white);
   text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 58px;
 }
 .box-button b
 {
@@ -166,6 +258,7 @@ img {
   text-transform: uppercase;
   background-color: var(--button);
   border: none;
+  margin-left: 316px;
 }
 .button:hover
 {
@@ -179,9 +272,16 @@ background-color: var(--button-hover);
 
 
 /*футер*/
+.columns-foother
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .main-footer {
   background-color: var(--foother-color);
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
 }
 
 .contacts-phone
