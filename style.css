@@ -34,6 +34,8 @@
 display: grid;
 grid-template-rows: min-content 1fr min-content;
 align-content: start;
+margin-left: auto;
+margin-right: auto;
 }
 a
 {
@@ -334,6 +336,11 @@ background-color: var(--social-button-hover);
 /*каталог*/
 
 /*чекбоксы*/
+.filter
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .filter ul
 {
@@ -398,6 +405,11 @@ background-color: var(--social-button-hover);
   .sort
   {
    background-color: var(--basic-white);
+   padding-left: 73px;
+   padding-top: 29px;
+   padding-bottom: 31px;
+
+
   }
   .sort b
   {
@@ -456,10 +468,17 @@ background-color: var(--social-button-hover);
   .list-result
   {
    background-color: var(--basic-white);
-  }
-  .list-result ul
-  {
-   list-style: none;
+   padding-left: 73px;
+   padding-top: 30px;
+   padding-bottom: 31px;
+   margin: 0;
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+
+
+
+
+
   }
   .button-detail
   {
