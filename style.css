@@ -13,6 +13,9 @@
   --from-to: #CACACA;
   --button-detail-hover: #669EC0;
   --foother-color: rgba(255, 255, 255, 0.9);
+  --bottom: #E5E5E5;
+  --rating: #666666;
+
 }
 .page
 {
@@ -31,9 +34,9 @@
   text-transform: uppercase;
   background-color: var(--background-color);
   min-height: 100%;
-display: grid;
+/*display: grid;
 grid-template-rows: min-content 1fr min-content;
-align-content: start;
+align-content: start;*/
 margin-left: auto;
 margin-right: auto;
 }
@@ -108,57 +111,80 @@ img {
   text-align: center;
   /*
   padding-bottom: 51px;*/
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   width: 1200px;
-  height: 216px;
+
+
 }
 
 .slogan-site b {
+  /*По макету 42.5 пикселя отступ сверху как так?*/
+  display: block;
   font-size: 21px;
   line-height: 26px;
+  padding-top: 42px;
+  margin-bottom: 13px;
+
 }
 .slogan-site span {
+  display: block;
   font-size: 14px;
   line-height: 26px;
+  padding-bottom: 51px;
 }
 
 /*синий блок слева*/
-.block-left
-{
-
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  width: 400px;
-  height: 256px;
-}
-.img-block-left
-{
-  width: 800px;
-  height: 256px;
-  margin: 0;
-  padding: 0;
-}
-.block-left b {
-
-  text-align: center;
-  font-size: 21px;
-  line-height: 21px;
-}
 .block-l
 {
   width: 1200px;
   display: grid;
   grid-template-columns: 400px 800px;
-
-
 }
-/*Блок с иконками*/
-.thumb-list
+
+
+
+
+.block-left
 {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  text-align: center;
+  width: 400px;
+  height: 256px;
+  box-sizing: border-box;
+  padding-top: 47px;
+  padding-bottom: 54px;
+  /* НИЖЕ Паддинги не по макету почему то спан не умещается
+  нужно спросить
+  по макету 49 пх*/
+  padding-left: 47px;
+  padding-right: 47px;
+  }
+
+
+
+
+.img-block-left
+{
+  width: 800px;
+  height: 256px;
+}
+.block-left b {
+  display: block;
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+.block-left p{
+  display: block;
+  padding: 0;
+  margin-top: 23px;
+}
+.thumb-list
+{ box-sizing: border-box;
   display: flex;
   list-style: none;
   padding: 0;
@@ -166,29 +192,34 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
   text-align: center;
-
-  justify-content: space-around;
   align-items: center;
-
   outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+/*Как поступить с иконками?*/
+.thumb-item {
+ outline: 5px solid rgba(0, 255, 255 , 0.3);
+ outline-offset: -5px;
+ flex-grow: 1;
 
 }
-.thumb-list h2
-{
-  text-align: center;
-  font-size: 21px;
-  line-height: 21px;
-
+.thumb-item p {
+display: block;
+margin: 0;
+padding: 0;
+padding-bottom: 82px;
 }
-
+.thumb-item h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+  }
+.thumb-item svg {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+    }
 
 /* Синий блок справа*/
-.thumb-item {
-  width: 300px;
-  height: 330px;
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-  outline-offset: -5px;
-}
 .block-right {
   background-color: var(--basic-white);
   color: var(--basic-white);
@@ -209,6 +240,15 @@ img {
   padding: 0;
   width: 400px;
   height: 256px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 51px;
+  padding-left: 50px;
+  padding-right: 49px;
+}
+.block-right p {
+  margin: 0;
+  padding: 0;
 }
 .img-block-right {
   width: 800px;
@@ -218,10 +258,16 @@ img {
 }
 
 .block-right b {
-
+  display: block;
   text-align: center;
   font-size: 21px;
   line-height: 21px;
+  margin-bottom: 25px;
+}
+.block-right span {
+  display: block;
+  margin-bottom: 23px;
+
 }
 /*серый блок*/
 .box-list
@@ -234,8 +280,11 @@ img {
   list-style: none;
   text-align: center;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+}
+.box-item
+{
+  flex-grow: 1
 }
 .box-item b
 {
@@ -452,42 +501,79 @@ background-color: var(--social-button-hover);
   /*сортировка поиска*/
   .sort
   {
+   /*outline: 5px solid rgba(255, 0, 0, 0.7);
+   outline-offset: -5px;*/
+   display: flex;
+   align-items: center;
    background-color: var(--basic-white);
    padding-left: 73px;
+   padding-right: 73px ;
    padding-top: 29px;
    padding-bottom: 31px;
-
-
+   width: 1200px;
+   box-sizing: border-box;
+   border-bottom: 1px solid var(--bottom);
   }
-  .sort b
+  .sorting-result
   {
+   width: 163px;
    color: var(--basic-black);
    font-size: 21px;
    line-height: 26px;
    font-weight:700;
+
   }
-  .sort-row
+  .sorting
   {
-   text-decoration: none;
-   color: var(--basic-black);
-   font-size: 12px;
-   line-height: 18px;
-   font-weight:400;
-   border-bottom: 1px dashed var(--basic-blue);
-   opacity: 0.3;
+  display: flex;
+  font-size: 12px;
+  width: 845px;
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
   }
-  .sort-row:hover
+  .sorting-list
+  {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   padding-left: 46px;
+   color: var(--basic-black);
+
+  }
+  .sorting-item
+  {
+   padding-right: 33px;
+  }
+  .sorting-item a
+  {
+  color: var(--basic-black);
+  border-bottom: 1px dashed var(--basic-blue);
+  opacity: 0.3;}
+
+  .sorting-from-list
+  {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+
+  }
+  .sorting-from-list li
+  {padding-left: 12px;}
+
+  .sorting-item a:hover
   {
    color: var(--basic-blue);
    opacity: 1;
   }
-  .sort-row:focus
+  .sorting-item a:focus
   {
    color: var(--basic-blue);
    opacity: 1;
    border-bottom: none;
   }
-  .sort-row:active
+  .sorting-item a:active
   {
    color: var(--basic-black);
    border-bottom: none;
@@ -511,69 +597,111 @@ background-color: var(--social-button-hover);
   {
    color: var(--basic-blue);
   }
+  /*сортировка поиска*/
 
   /*список*/
+  .result
+  {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+  }
   .list-result
   {
    background-color: var(--basic-white);
    padding-left: 73px;
    padding-top: 30px;
-   padding-bottom: 31px;
-   margin: 0;
-   display: grid;
-   grid-template-rows: 1fr 1fr 1fr;
+   padding-bottom: 30px;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid var(--bottom);
+  }
+  .result-img
+  {
+    width: 164px;
+    height: 90px;
+    display: block;
+  }
+  .result-description
+  {
+    width: 780px;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-right: 6px;
 
+  }
 
-
+  .result-description-h2
+  {
+    margin: 0;
+    min-width: 780px;
 
 
   }
   .button-detail
   {
+    margin-right: 6px;
+  }
+  .button-confirm a
+  {
+    display: block;
+    width: 142px;
+    height: 27px;
+    font-weight:700;
+    padding: 3px 17px;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--basic-white);
+    background-color: var(--button);
+  }
+  .button-detail a
+  {
+   display: block;
    width: 110px;
    height: 27px;
-   border: none;
-   font: inherit;
-   font-size: 14px;
-   line-height: 21px;
    font-weight:700;
+   padding: 3px 17px;
+   margin-top: 10px;
    text-align: center;
-   vertical-align: middle;
-   text-transform: uppercase;
    color: var(--basic-white);
    background-color: var(--basic-blue);
   }
-  .button-detail:hover
+  .rating
+  {
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  height: 92px;
+  justify-content: space-between;
+}
+  .rating-star
+  {
+  color: var(--basic-blue);
+  font-size: 18px;
+  }
+  .rating-figure span
+  {
+}
+
+
+  .button-detail a:hover
   {
    color: var(--basic-white);
    background-color: var(--button-detail-hover);
   }
-  .button-detail:active
+  .button-detail a:active
   {
     background-color: var(--button-detail-hover);
     color: var(--button-visibility);
   }
-  .button-confirm
-  {
-   width: 142px;
-   height: 27px;
-   border: none;
-   font: inherit;
-   font-size: 14px;
-   line-height: 21px;
-   font-weight:700;
-   text-align: center;
-   vertical-align: middle;
-   text-transform: uppercase;
-   color: var(--basic-white);
-   background-color: var(--button);
-  }
-  .button-confirm:hover
+  .button-confirm a:hover
   {
    color: var(--basic-white);
    background-color: var(--button-hover);
   }
-  .button-confirm:active
+  .button-confirm a:active
   {
    color: var(--button-visibility);
    background-color: var(--button-active);
