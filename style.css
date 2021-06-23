@@ -62,7 +62,7 @@ img {
 .main-header-logo {
   width: 138px;
   height: 70px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
+
 }
 .center
 {
@@ -95,8 +95,7 @@ img {
 /*шапка*/
 .main-header
 {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
+
 
 }
 /*Тело*/
@@ -193,12 +192,11 @@ img {
   background-color: var(--basic-white);
   text-align: center;
   align-items: center;
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
+
 }
 /*Как поступить с иконками?*/
 .thumb-item {
- outline: 5px solid rgba(0, 255, 255 , 0.3);
- outline-offset: -5px;
+
  flex-grow: 1;
 
 }
@@ -352,34 +350,33 @@ background-color: var(--button-hover);
 .main-footer
 {
   width: 1200px;
-  height: 120px;
   display: flex;
   align-self: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 36px 0;
   background-color: var(--foother-color);
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
+
 
 }
 
-.footer
+/*.footer
 {
   outline: 5px solid green;
   outline-offset: -5px;
   margin: 0;
   padding: 0;
 
-}
-.foother-contact
+}*/
+.footer-contact
 {
-  order: 1;
+
 }
 .social-button
 {
-  order: 2;
+
 }
-.foother-logo {
-  order: 3;
+.footer-logo {
+
 }
 
 
@@ -391,6 +388,7 @@ background-color: var(--button-hover);
   line-height: 26px;
   font-weight:700;
   text-align: center;
+  display: block;
 }
 .twitter, .facebook, .youtube
 {
@@ -501,8 +499,7 @@ background-color: var(--social-button-hover);
   /*сортировка поиска*/
   .sort
   {
-   /*outline: 5px solid rgba(255, 0, 0, 0.7);
-   outline-offset: -5px;*/
+
    display: flex;
    align-items: center;
    background-color: var(--basic-white);
@@ -528,8 +525,7 @@ background-color: var(--social-button-hover);
   display: flex;
   font-size: 12px;
   width: 845px;
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-  outline-offset: -5px;
+
   }
   .sorting-list
   {
@@ -637,8 +633,11 @@ background-color: var(--social-button-hover);
   {
     margin: 0;
     min-width: 780px;
-
-
+  }
+  .result-description-a
+  {
+    text-decoration: none;
+    color: var(--basic-black);
   }
   .button-detail
   {
@@ -680,13 +679,17 @@ background-color: var(--social-button-hover);
   {
   color: var(--basic-blue);
   font-size: 18px;
+  text-align: right;
   }
-  .rating-figure span
-  {
-}
+  .rating-figure {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: var(--rating);
+    background-color: var(--background-color);
+    text-align: center;
+  }
 
-
-  .button-detail a:hover
+ .button-detail a:hover
   {
    color: var(--basic-white);
    background-color: var(--button-detail-hover);
@@ -706,7 +709,12 @@ background-color: var(--social-button-hover);
    color: var(--button-visibility);
    background-color: var(--button-active);
   }
+/*
+outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
 
+*/
 
 
 
