@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -18,69 +17,86 @@
 
 
       <nav class="main-nav">
-        <!--<a class="main-header-logo">
-          <img class="main-header-logo" src="img/logo.svg" width="138" height="70" alt="логотип">
-        </a>-->
-        <!--навигация по сайту-->
-      <div class="main-navigation-wrapper">
+
 
       <ul class="site-nav">
-        <li><a href="blank.html">ИНФОРМАЦИЯ</a></li>
-        <li><a href="blank.html">ФОТО И ВИДЕО</a></li>
-        <li><a class="main-header-logo">
+        <li class="site-nav-1"><a href="blank.html">ИНФОРМАЦИЯ</a></li>
+        <li class="site-nav-2"><a href="blank.html">ФОТО И ВИДЕО</a></li>
+        <li class="site-nav-3"><a href="blank.html">КАРТА ШТАТА</a></li>
+        <li class="site-nav-4"><a href="catalog.html">ГОСТИНИЦЫ</a></li>
+      </ul>
+      <!-- </div> -->
+      </nav>
+      <div class="header-logo">
+        <a href="index.html">
           <img class="main-header-logo" src="img/logo.svg" width="138" height="70" alt="логотип">
         </a>
-        </li>
-        <li><a href="blank.html">КАРТА ШТАТА</a></li>
-        <li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
-      </ul>
-      </div>
-      </nav>
+        </div>
+
        </header>
   <main>
+     <section>
+      <form method="get" action="https://echo.htmlacademy.ru/courses">
+       <div class="filters">
+      <!-- <img src="img/backgroundcatalog.jpg" width="1200" height="217" alt="подложка фильтра">-->
 
-      <!--<img src="img/backgroundcatalog.jpg" width="1200" height="217" alt="подложка фильтра">-->
-         <form method="get" action="https://echo.htmlacademy.ru/courses">
-          <div class="filter">
-         <div><fieldset class="filter-benefits">
+
+
+         <fieldset class="filter-benefits">
           <Legend>Инфраструктура:</Legend>
           <ul>
-            <li><input type="checkbox" name="swimming-pool" id="filter-swimming-pool">
+            <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="swimming-pool" id="filter-swimming-pool">
                   <label for="filter-swimming-pool">БАССЕЙН</label></li>
-            <li><input type="checkbox" name="parking" id="filter-parking">
+            <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
                   <label for="filter-parking">ПАРКОВКА</label></li>
-            <li><input type="checkbox" name="wifi" id="filter-wifi">
+            <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wifi" id="filter-wifi">
                   <label for="filter-wifi">WI-FI</label></li>
           </ul>
         </fieldset>
-      </div>
 
 
-          <div><fieldset class="filter-type">
+
+
+          <fieldset class="filter-type">
             <Legend>Тип жилья:</Legend>
             <ul>
-              <li><input type="checkbox" name="hotel" id="filter-hotel">
+              <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel">
                   <label for="filter-hotel">ГОСТИНИЦА</label></li>
-              <li><input type="checkbox" name="motel" id="filter-motel">
+              <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel">
                   <label for="filter-motel">ОТЕЛЬ</label></li>
-              <li><input type="checkbox" name="apartments" id="filter-apartments">
+              <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="apartments" id="filter-apartments">
                   <label for="filter-apartments">АПАРТАМЕНТЫ</label></li>
               </ul>
           </fieldset>
-        </div>
-        <div>
-            <fieldset class="slider-price">
+
+
+          <fieldset class="slider-price">
             <legend>Стоимость в сутки, &#8381;;</legend>
+            <div class="range-filter">
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="3000">
+               </label>
+              </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+                  <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+            </div>
 
-            <input type="range" min="0" max="1000000" step="1">
-            <label>от<input type="number" name="min-price"></label>
-            <label>до<input type="number" name="max-price"></label>
-            <button style="width: 137px; height: 36px;" class="price-button" type="submit">Показать</button>
+
+
+
+        </div>
           </fieldset>
-      </div>
-      </div>
-      </form>
-
+  </div>
+  </form>
+      </section>
 
 
       <div class="sort">
@@ -112,7 +128,6 @@
 
 
       <section class="result">
-      <!--________________________________________________________________________-->
       <div class="list-result">
       <div class="result-img">
       <img src="img/hotel.jpg" width="135" height="90" alt="шикарный вид на гору">
@@ -193,12 +208,48 @@
       </div>
     </section>
     </main>
-
     <footer class="main-footer">
-      <!--<div class="columns-footer">-->
         <div class="footer-contact">
           <h1 class="visually-hidden">контакты</h1>
           <!--скрываемый заголовок для поисковых систем-->
+          <span class="contacts-phone">
+            <a class="contacts-phone" href="#">#visitSEDONA</a>
+            <a class="contacts-phone" href="tel:+7800555-86-28">+7 800 555-86-28</a>
+          </span>
+        </div>
+        <div class="social-button">
+       <div class="twitter">
+        <a href="#"><svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.95 1.144c1.685-.496 2.984.27 3.577 1.18.673-.232 1.331-.482 2.011-.709a2.345 2.345 0 01-.857 1.768c.685.17 1.304-.49 1.304-.49-.169 1-1.006 1.787-1.563 2.023-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.12C1.705 9.246.374 8.53.448 6.33c.285.328 1.067.536 1.34.472-.703-.24-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479z" fill="#fff"/>
+        </svg>
+      </a>
+       </div>
+       <div class="facebook">
+        <a  href="#"><svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/>
+        </svg>
+      </a>
+      </div>
+      <div class="youtube">
+        <a  href="#"><svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm3.027 4.002v7.996L15.014 8 6.027 4.002z" fill="#fff"/>
+          </svg>
+       </a>
+      </div>
+
+        </div>
+        <div class="footer-logo">
+          <p>
+            Website by
+            <a  href="https://htmlacademy.ru/"><img src="img/logohtmlacademy.svg" width="115" height="33" alt="логотип htmlAcademy"></a>
+          </p>
+
+        </div>
+
+
+      </footer>
+
+    <!-- <footer class="main-footer">
+
+        <div class="footer-contact">
+          <h1 class="visually-hidden">контакты</h1>
           <span class="contacts-phone">
             <a class="contacts-phone" href="#">#visitSEDONA</a>
             <a class="contacts-phone" href="tel:+7800555-86-28">+7 800 555-86-28</a>
@@ -224,7 +275,7 @@
         </div>
 
 
-      </footer>
+      </footer> -->
 
     </body>
   </html>
