@@ -1,6 +1,7 @@
 :root {
   --basic-white: #ffffff;
   --basic-black: #000000;
+  --basic-black-opacity: rgba(0, 0, 0, 0.3);
   --basic-blue: #81B3D2;
   --basic-gray: #EEEEEE;
   --background-color: #F2F2F2;
@@ -113,16 +114,33 @@ img {
 .site-nav a {
 color: var(--basic-black);
 }
+.site-nav a:hover
+{
+  color: var(--basic-blue);
+}
+.site-nav a:focus
+{
+ color: var(--button);
+}
+
+.site-nav a:active
+{
+ color: var(--basic-black-opacity);
+}
+
 
 /* .sort-from:hover
+наведение
 {
  color: var(--basic-black);
 }
 .sort-from:focus
+выбранный
 {
  color: var(--basic-blue);
 }
 .sort-from:active
+нажатие
 {
  color: var(--basic-blue);
 } */
@@ -261,29 +279,45 @@ color: var(--basic-black);
  width: 400px;
  text-align: center;
 }
+.thumb-items h2
+{
+  padding: 0;
+  margin: 0;
+  padding-top: 160px;
+}
+.thumb-items p
+{
+  padding: 0;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 82px;
+
+}
 .thumb-items:nth-child(1) .icon-svg {
   width: 75px;
   height: 72px;
-  background-image: url(img/icon1.svg);
-  position: relative;
+  content: url(img/icon1.svg);
+  position: absolute;
   left: 162px;
-  top: 20px;
+  top: 1040px;
+
+
 
 }
 .thumb-items:nth-child(3) .icon-svg {
   width: 64px;
   height: 77px;
   background-image: url(img/icon2.svg);
-  position: relative;
-  left: 162px;
+  position: absolute;
+  /* left: 162px; */
 }
 .thumb-items:nth-child(2) .icon-svg {
   width: 75px;
   height: 70px;
   background-image: url(img/icon3.svg);
   background-repeat: no-repeat;
-  position: relative;
-  left: 162px;
+  position: absolute;
+  /* left: 162px; */
 }
 /*
 { box-sizing: border-box;
@@ -583,6 +617,18 @@ padding-left: 65px;
   background-color: var(--basic-white);
 }
 
+.filters button
+{
+  padding: 6px 35px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background: none;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+
+}
 
 .box-button b
 {
