@@ -297,7 +297,7 @@ color: var(--basic-black);
 .thumb-items:nth-child(1) .icon-svg {
   width: 75px;
   height: 72px;
-  content: url(img/icon1.svg);
+  background-image: url(img/icon1.svg);
   position: absolute;
   right:163px;
   top: 50px;
@@ -550,7 +550,7 @@ width: 300px;
 .range-filter {
   width: 350px;
   margin-top: 10px;
-  
+
 }
 .range-controls {
   width: 316px;
@@ -633,7 +633,7 @@ padding-left: 65px;
     position: absolute;
     top: 33px;
     right: 90px;
-    
+
 
 }
 
@@ -706,7 +706,7 @@ background-color: var(--button-hover);
 
   /* outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px; */
-  
+
 
 }
 .footer-logo
