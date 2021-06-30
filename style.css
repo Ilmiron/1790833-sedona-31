@@ -204,15 +204,15 @@ color: var(--basic-black);
   /*По макету 42.5 пикселя отступ сверху как так?*/
   display: block;
   font-size: 21px;
-  line-height: 26px;
-  padding-top: 42px;
+  line-height: 27px;
+  padding-top: 39px;
   margin-bottom: 13px;
 
 }
 .slogan-site span {
   display: block;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 29px;
   padding-bottom: 51px;
 }
 
@@ -235,7 +235,7 @@ color: var(--basic-black);
   width: 400px;
   height: 256px;
   box-sizing: border-box;
-  padding-top: 47px;
+  padding-top: 46px;
   padding-bottom: 54px;
   /* НИЖЕ Паддинги не по макету почему то спан не умещается
   нужно спросить
@@ -253,16 +253,21 @@ color: var(--basic-black);
   height: 256px;
 }
 .block-left b {
+  margin: 0;
+  padding: 0;
   display: block;
   text-align: center;
   font-size: 21px;
   line-height: 21px;
   margin-bottom: 25px;
+  
 }
 .block-left p{
   display: block;
+  line-height: 21px;
   padding: 0;
-  margin-top: 23px;
+  margin-top: 21px;
+  
 }
 .thumb-list
 {
@@ -284,14 +289,14 @@ color: var(--basic-black);
 {
   padding: 0;
   margin: 0;
-  padding-top: 160px;
+  padding-top: 156px;
 }
 .thumb-items p
 {
   padding: 0;
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 82px;
+  padding-top: 21px;
+  padding-bottom: 77px;
 
 }
 .thumb-items:nth-child(1) .icon-svg {
@@ -300,7 +305,7 @@ color: var(--basic-black);
   background-image: url(img/icon1.svg);
   position: absolute;
   right:163px;
-  top: 50px;
+  top: 60px;
 
 
 
@@ -310,8 +315,8 @@ color: var(--basic-black);
   height: 77px;
   background-image: url(img/icon2.svg);
   position: absolute;
-  left:169px;
-  top: 50px;
+  left:168px;
+  top: 55px;
 }
 .thumb-items:nth-child(2) .icon-svg {
   width: 75px;
@@ -319,8 +324,8 @@ color: var(--basic-black);
   background-image: url(img/icon3.svg);
   background-repeat: no-repeat;
   position: absolute;
-  left: 159px;
-  top: 55px;
+  left: 163px;
+  top: 61px;
 }
 /*
 { box-sizing: border-box;
@@ -369,11 +374,7 @@ padding-top: 56px;
 } */
 
 /* Синий блок справа*/
-.block-right {
-  background-color: var(--basic-white);
-  color: var(--basic-white);
-  text-align: center;
-}
+
 .block-r
 {
   width: 1200px;
@@ -390,7 +391,7 @@ padding-top: 56px;
   width: 400px;
   height: 256px;
   box-sizing: border-box;
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 51px;
   padding-left: 50px;
   padding-right: 49px;
@@ -398,6 +399,8 @@ padding-top: 56px;
 .block-right p {
   margin: 0;
   padding: 0;
+  /* padding-bottom: 10px;
+  padding-top: 10px; */
 }
 .img-block-right {
   width: 800px;
@@ -415,7 +418,7 @@ padding-top: 56px;
 }
 .block-right span {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 
 }
 /*серый блок*/
@@ -444,7 +447,7 @@ padding-top: 56px;
   text-align: center;
   font-size: 21px;
   line-height: 21px;
-  padding-top: 47px;
+  padding-top: 46px;
 }
 .box-item p {
   text-align: center;
@@ -499,7 +502,7 @@ padding-top: 56px;
  padding: 0;
  margin: 0;
  width: 250px;
- padding-left: 111px;
+ padding-left: 70px;
  padding-bottom: 32px;
 }
 .filter-benefits ul
@@ -511,20 +514,23 @@ padding-top: 56px;
 }
 .filter-benefits legend
 {
-  font-weight: 700;
+  font-size: 16px;
+ font-weight: 700;
   padding-top: 26px;
 }
 
 
 .filter-type
 {
-padding: 0;
+  padding: 0;
 margin: 0;
 width: 300px;
+padding-left: 5px;
 }
 .filter-type legend
-{
+{ font-size: 16px;
   font-weight: 700;
+  
   padding-top: 26px;
 
 
@@ -544,12 +550,13 @@ width: 300px;
 
 .slider-price legend {
   color: var(--basic-white);
+  font-size: 16px;
   font-weight: 700;
-  padding-top: 26px;
+  padding-top: 23px;
 }
 .range-filter {
   width: 350px;
-  margin-top: 10px;
+  margin-top: 5px;
 
 }
 .range-controls {
@@ -586,21 +593,29 @@ width: 300px;
 {
 padding-left: 65px;
 }
+
 .max-price
 {
-  padding-left: 75px;
+  padding-left: 63px;
 }
 .price-controls
-{ width: 312px;
-  height: 36px;
+  { 
+   display: flex;
+  width: 312px;
+  height: 32px;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
+}
+.price-controls label
+{ display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .price-controls input {
    width: 60px;
   /* padding: 10px; */
   margin: 0;
-  padding: 0;
+  padding: 3px;
   background: none;
   border: none;
   color: var(--basic-white);
@@ -623,7 +638,7 @@ padding-left: 65px;
 
 .range-controls button
 {
-  padding: 6px 35px;
+  padding: 6px 33px;
     text-transform: uppercase;
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -631,8 +646,8 @@ padding-left: 65px;
     font-size: 14px;
     line-height: 20px;
     position: absolute;
-    top: 33px;
-    right: 90px;
+    top: 35px;
+    right: 95px;
 
 
 }
@@ -746,11 +761,20 @@ background-color: var(--button-hover);
 
 
 
+.twitter{
+  background-color: var(--basic-blue);
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  position: relative;
+}
+
 .twitter a
 {
   position: absolute;
-  top: 12px;
+  top: 14px;
   right:14px;
+
 }
 .facebook a
 {
@@ -764,7 +788,7 @@ background-color: var(--button-hover);
   top: 13px;
   right: 13px;
 }
-.twitter, .facebook, .youtube
+.facebook, .youtube
 {
   background-color: var(--basic-blue);
   width: 46px;
@@ -851,7 +875,7 @@ background-color: var(--social-button-hover);
 .slider-price
 {
   border : none;
-  padding-left: 50px;
+  padding-left: 183px;
 }
 .slider-price label
 {
@@ -860,6 +884,7 @@ background-color: var(--social-button-hover);
   line-height: 21px;
   font-weight: 400;
   background: none;
+
 }
 /*слайдер*/
 .price-button
@@ -912,13 +937,17 @@ background-color: var(--social-button-hover);
   width: 845px;
 
   }
+  .sorting span
+  {
+    
+  }
   .sorting-list
   {
    list-style: none;
    margin: 0;
    padding: 0;
    display: flex;
-   padding-left: 46px;
+   padding-left: 40px;
    color: var(--basic-black);
 
   }
@@ -991,8 +1020,8 @@ background-color: var(--social-button-hover);
   {
    background-color: var(--basic-white);
    padding-left: 73px;
-   padding-top: 30px;
-   padding-bottom: 30px;
+   padding-top: 25px;
+   padding-bottom: 26px;
    display: flex;
    align-items: center;
    border-bottom: 1px solid var(--bottom);
@@ -1010,6 +1039,7 @@ background-color: var(--social-button-hover);
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    
     margin-right: 6px;
 
   }
@@ -1017,6 +1047,7 @@ background-color: var(--social-button-hover);
   .result-description-h2
   {
     margin: 0;
+    padding-bottom: 5px;
     min-width: 780px;
   }
   .result-description-a
@@ -1034,8 +1065,8 @@ background-color: var(--social-button-hover);
     width: 142px;
     height: 27px;
     font-weight:700;
-    padding: 3px 17px;
-    margin-top: 10px;
+    padding: 0;
+    margin-top: 12px;
     text-align: center;
     color: var(--basic-white);
     background-color: var(--button);
@@ -1046,8 +1077,8 @@ background-color: var(--social-button-hover);
    width: 110px;
    height: 27px;
    font-weight:700;
-   padding: 3px 17px;
-   margin-top: 10px;
+   /* padding: 3px 17px; */
+   margin-top: 12px;
    text-align: center;
    color: var(--basic-white);
    background-color: var(--basic-blue);
