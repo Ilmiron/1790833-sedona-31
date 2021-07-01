@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
   </head>
-  <body class="page-body"> <!--все буквы заглавные на сайте-->
+
+  <body class="page-body">
+    <div class="container">
     <header class="main-header">
       <!--Шапка сайта-->
 
@@ -35,14 +36,13 @@
         </div>
 
        </header>
-    <main class="container">
+    <main>
       <!-- ______________________________________________________________________________________________  -->
 
         <section class="title-img">
            <img class="welcome-svg" src="img/welcome.svg" width="188" height="45" alt="welcome">
            <img class="gorgeous-svg" src="img/gorgeous.svg" width="256" height="29" alt="to the gogeous">
            <img class="sedona-svg" src="img/sedona.svg" width="457" height="213" alt="sedona">
-           <img class="bottom-welcome" src="img/bottomwelcome.svg" width="1200" height="57" alt>
           <h1 class="visually-hidden">Welcome to the gorgerous Sedona</h1>
           <h1 class="visually-hidden">because the grand canyon sucks</h1>
           </section>
@@ -101,13 +101,13 @@
         </div>
         </div>
           <ul class="box-list">
-            <li class="box-item">
+            <li class="box-item box-item-1">
               <b>НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</b><span>— №3 —</span><p>все достопримечательности<br>находятся очень близко</p>
             </li>
-            <li class="box-item">
+            <li class="box-item box-item-2">
               <b>КРАСИВАЯ<br>ДОРОГА</b><span>— №4 —</span><p>ехать в седону из лас-вегаса совсем<br>не скучно!</p>
             </li>
-            <li class="box-item">
+            <li class="box-item box-item-3">
               <b>МАЛО<br>ТУРИСТОВ</b><span>— №5 —</span><p>большинство едет в гранд каньон<br>и толпится там</p>
             </li>
           </ul>
@@ -117,17 +117,19 @@
         <span>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</span>
         <br><button style="width: 568px; height: 86px;" class="button" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
       </div>
+         <div class="map">
          <img src="img/map.jpg" width="1199" height="594" alt="карта штата">
+        </div>
      </main>
      <footer class="main-footer">
       <!--<div class="columns-footer">-->
         <div class="footer-contact">
           <h1 class="visually-hidden">контакты</h1>
           <!--скрываемый заголовок для поисковых систем-->
-          <span class="contacts-phone">
-            <a class="contacts-phone" href="#">#visitSEDONA</a>
-            <a class="contacts-phone" href="tel:+7800555-86-28">+7 800 555-86-28</a>
-          </span>
+
+            <a class="contact-tag" href="#">#visitSEDONA</a>
+            <a class="contact-tel" href="tel:+7800555-86-28">+7 800 555-86-28</a>
+
         </div>
         <div class="social-button">
        <div class="twitter">
@@ -157,7 +159,8 @@
 
 
       </footer>
-
+  </div>
   </body>
+
 </html>
 
