@@ -19,6 +19,7 @@
   --rating: #666666;
   --toggle:#ABABAB;
   --box-shadow: rgba(0, 1, 1, 0.2);
+  --search-shadow: rgba(0, 1, 1, 0.15);
 
 
 }
@@ -506,7 +507,7 @@ padding-top: 56px;
   background-color: var(--basic-white);
   text-align: start;
   display: flex;
-  background-image: url(img/backgroundcatalog.jpg);
+  background-image: url(../img/backgroundcatalog.jpg);
 }
 .filter-option {
   padding-top: 25px;
@@ -519,12 +520,12 @@ padding-top: 56px;
   user-select: none;
 }
 .filter-input-checkbox + label::before {
-  content: url(img/checkbox-off.svg);
+  content: url(../img/checkbox-off.svg);
   position: absolute;
   left: -39px;
   top: 0;}
   .filter-input-checkbox:checked + label::before {
-    content: url(img/checkbox-on.svg);
+    content: url(../img/checkbox-on.svg);
     position: absolute;
     left: -39px;
     top: 0;}
@@ -704,6 +705,8 @@ padding-left: 65px;
   line-height: 26px;
   font-weight:700;
   text-align: center;
+  width: 568px;
+  height: 86px;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
@@ -723,9 +726,68 @@ background-color: var(--button-hover);
 
 .map
 {
+  display: flex;
   position: relative;
-  width: 1200px;
+  /* width: 1200px;
+  height: 594px; */
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: absolute;
+  width: 568px;
+  height: 395px;
+  background-color: var(--basic-white);
+  box-shadow: var(--search-shadow);
+  left: 50%;
+  margin-left: -284px;
+  padding: 55px;
+  font-weight: bold;
+  line-height: 21px;
+}
+.search-form .entry, .search-form .departure {
+  padding-top: 9px;
+  margin-bottom: 18px;
+}
+.search-form input[name="date-of-entry"], .search-form input[name="date-of-departure"] {
+  padding-left: 13px;
+}
+.search-form input
+{
+  width: 331px;
+  height: 35px;
+ background-color: var(--background-color);
+ border: none;
+ text-transform: uppercase;
+ font: inherit;
+}
+
+.entry-calendar {
+  position: absolute;
+  top: 61px;
+  right: 64px;
+}
+.departure-calendar {
+  position: absolute;
+  top: 128px;
+  right: 64px;
+}
+.amount
+{
+ justify-content: space-between;
+ align-items: center;
+}
+
+.map iframe {
+  background: var(--background-color);
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  width: 1199px;
   height: 594px;
+  border: 0;
 }
 /*футер*/
 .main-footer
@@ -897,7 +959,7 @@ background-color: var(--social-button-hover);
 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-image: url(img/backgroundcatalog.jpg) ;
+  background-image: url(../img/backgroundcatalog.jpg) ;
 }
 
 .filter ul
