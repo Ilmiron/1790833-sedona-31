@@ -20,6 +20,7 @@
   --toggle:#ABABAB;
   --box-shadow: rgba(0, 1, 1, 0.2);
   --search-shadow: rgba(0, 1, 1, 0.15);
+  --amount-button: #A9A9A9;
 
 
 }
@@ -735,7 +736,8 @@ background-color: var(--button-hover);
 .search-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
   box-sizing: border-box;
   position: absolute;
   width: 568px;
@@ -748,40 +750,87 @@ background-color: var(--button-hover);
   font-weight: bold;
   line-height: 21px;
 }
-.search-form .entry, .search-form .departure {
-  padding-top: 9px;
-  margin-bottom: 18px;
+.search-form .entry{
+
 }
-.search-form input[name="date-of-entry"], .search-form input[name="date-of-departure"] {
-  padding-left: 13px;
+.search-form .departure {
+  padding-bottom: 20px;
+
 }
-.search-form input
+.search-form input[name="date-of-entry"]
 {
-  width: 331px;
-  height: 35px;
+ width: 331px;
+ height: 35px;
  background-color: var(--background-color);
  border: none;
  text-transform: uppercase;
  font: inherit;
+ padding-left: 13px;
+ margin-left: 23px;
 }
+.search-form input[name="date-of-departure"] {
+  width: 331px;
+  height: 35px;
+  background-color: var(--background-color);
+  border: none;
+  text-transform: uppercase;
+  font: inherit;
+  padding-left: 13px;
+  margin-bottom: 19px;
+  margin-left: 20px;
+}
+.search-form input{}
 
 .entry-calendar {
   position: absolute;
-  top: 61px;
+  top: 63px;
   right: 64px;
 }
 .departure-calendar {
   position: absolute;
-  top: 128px;
+  top: 130px;
   right: 64px;
 }
 .amount
 {
- justify-content: space-between;
- align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 458px;
+    box-sizing: border-box;
+    padding-bottom: 42px;
 }
+.amount button {
+  height: 37px;
+  width: 40px;
+  border: none;
+  background-color: var(--background-color);
+  color: var(--amount-button);
+}
+.amount input {
+  width: 30px;
+  height: 35px;
+  border: none;
+  background-color: var(--background-color);
+  text-align: center;
+}
+.amount button[name="minus-adult"] {
 
-.map iframe {
+  margin-left: 41px;
+
+}
+.amount button[name="plus-adult"] {
+
+  margin-right: 53px;
+}
+.amount button[name="minus-children"]
+{
+  margin-left: 26px;
+
+}
+.map iframe
+{
   background: var(--background-color);
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
@@ -789,6 +838,22 @@ background-color: var(--button-hover);
   height: 594px;
   border: 0;
 }
+.search-button {
+  width: 100%;
+  background-color: var(--basic-blue);
+  border: medium none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--basic-white);
+  line-height: 21px;
+  width: 458px;
+  height: 58px;
+
+
+}
+
+
+
 /*футер*/
 .main-footer
  {outline: 5px solid green;
@@ -918,7 +983,11 @@ background-color: var(--button-hover);
 {
   margin-right: 0;
 }
-
+/*  Действия */
+.entry-calendar:hover
+{
+  fill: var(--basic-black);
+}
 .twitter:hover
 {
 background-color: var(--social-button-hover);
