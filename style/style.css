@@ -21,27 +21,28 @@
   --box-shadow: rgba(0, 1, 1, 0.2);
   --search-shadow: rgba(0, 1, 1, 0.15);
   --amount-button: #A9A9A9;
+  --footer-logo: #BDBBBC;
 }
 .page
 {
   height: 100%;
 }
 .page-body {
-  max-width: 1200px;
-  min-width: 960px;
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: var(--basic-black);
-  text-transform: uppercase;
-  background-color: var(--background-color);
+max-width: 1200px;
+min-width: 960px;
+margin: 0;
+padding: 0;
+font-family: "PT Sans";
+font-size: 14px;
+line-height: 26px;
+font-weight: 400;
+color: var(--basic-black);
+text-transform: uppercase;
+background-color: var(--background-color);
   min-height: 100%;
-/*display: grid;
+display: grid;
 grid-template-rows: min-content 1fr min-content;
-align-content: start;*/
+align-content: start;
 margin-left: auto;
 margin-right: auto;
 }
@@ -115,6 +116,7 @@ img {
   right: 50%;
   margin-right: -69px;
   top: 0;
+  z-index: 1;
 /*
 логотип плавает
 */
@@ -534,6 +536,25 @@ padding-top: 56px;
     position: absolute;
     left: -40px;
     top: 0;}
+  .filter-input-checkbox:disabled + label::before {
+    content: "";
+    background-image: url(../img/checkbox-on-disabled.svg);
+    width: 26px;
+    height: 23px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -40px;
+    top: 0;}
+  .filter-input-checkbox:disabled + label::before {
+    content: "";
+    background-image: url(../img/checkbox-off-disabled.svg);
+    width: 26px;
+    height: 23px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -40px;
+    top: 0;}  
+
 
 .filter-benefits
 {
@@ -744,15 +765,19 @@ background-color: var(--button-hover);
   background-color: var(--basic-white);
   color: var(--basic-black);
 }
-.search-form input:focus
+.toggle:hover 
 {
-  border: 2px solid var(--bottom);
+ transform: scale(1.2);
+}
+.search-form:focus input
+{
+  outline: 2px solid var(--bottom);
   background-color: var(--basic-white);
 }
 /* .range-controls .toggle:hover
 {
 
-} */
+}
 
 .map
 {
@@ -760,7 +785,7 @@ background-color: var(--button-hover);
   position: relative;
   /* width: 1200px;
   height: 594px; */
-}
+
 
 .search-form {
   display: flex;
@@ -813,10 +838,18 @@ background-color: var(--button-hover);
   top: 63px;
   right: 64px;
 }
+.entry-calendar svg
+{
+  fill: var(--amount-button);
+}
 .departure-calendar {
   position: absolute;
   top: 130px;
   right: 64px;
+}
+.departure-calendar svg
+{
+  fill: var(--amount-button);
 }
 .amount
 {
@@ -852,6 +885,7 @@ background-color: var(--button-hover);
   position: absolute;
   top: 18px;
   left: 13px;
+  fill: var(--amount-button);
 }
 .button-plus-adults {
   position: relative;
@@ -862,6 +896,7 @@ background-color: var(--button-hover);
   position: absolute;
   top: 14px;
   left: 15px;
+  fill: var(--amount-button);
 }
 .button-minus-children
 { position: relative;
@@ -872,6 +907,7 @@ background-color: var(--button-hover);
   position: absolute;
   top: 18px;
   left: 15px;
+  fill: var(--amount-button);
 }
 .button-plus-children
 {
@@ -882,6 +918,7 @@ background-color: var(--button-hover);
   position: absolute;
   top: 14px;
   left: 17px;
+  fill: var(--amount-button);
 }
 .map iframe
 {
@@ -975,10 +1012,11 @@ background-color: var(--button-hover);
   align-items: center;
   justify-content: center;
   }
-.footer-logo a
+.footer-logo-link svg
 {
     padding-right: 65px;
     padding-top: 5px;
+    fill: var(--basic-black);
 }
   .footer-logo span
   {
@@ -1061,35 +1099,35 @@ background-color: var(--button-hover);
   margin-right: 0;
 }
 /*  Действия */
-.button-minus-adults:hover
+.button-minus-adults:hover svg
 {
  fill: var(--basic-black)
 }
-.button-minus-adults:active
+.button-minus-adults:active svg
 {
   fill:var(--basic-blue);
 }
-.button-plus-adults:hover
+.button-plus-adults:hover svg
 {
  fill: var(--basic-black)
 }
-.button-plus-adults:active
+.button-plus-adults:active svg
 {
   fill:var(--basic-blue);
 }
-.button-minus-children:hover
+.button-minus-children:hover svg
 {
  fill: var(--basic-black)
 }
-.button-minus-children:active
+.button-minus-children:active svg
 {
   fill:var(--basic-blue);
 }
-.button-plus-children:hover
+.button-plus-children:hover svg
 {
  fill: var(--basic-black)
 }
-.button-plus-children:active
+.button-plus-children:active svg
 {
   fill:var(--basic-blue);
 }
@@ -1127,6 +1165,10 @@ background-color: var(--social-button-hover);
 {
   background-color: var(--social-button-active);
 }
+.twitter:active img 
+{
+  opacity: 0.5;
+}
 .facebook:hover
 {
 background-color: var(--social-button-hover);
@@ -1135,22 +1177,30 @@ background-color: var(--social-button-hover);
 {
   background-color: var(--social-button-active)
 }
+.facebook:active img 
+{
+  opacity: 0.5;
+}
 .youtube:hover
 {
 background-color: var(--social-button-hover);
+}
+.youtube:active img
+{
+  opacity: 0.5;
 }
 .youtube:active
 {
   background-color: var(--social-button-active);
 }
 /*логотип в футере*/
-.foother-logo:hover
+.footer-logo-link:hover svg
 {
- background-color: var(--basic-blue)
+ fill: var(--basic-blue);
 }
-.foother-logo:active
+.footer-logo-link:active svg
 {
-  background-color: var(--social-button-active) ;
+  fill: var(--footer-logo);
 }
 /*каталог*/
 
@@ -1293,9 +1343,9 @@ background-color: var(--social-button-hover);
     padding-left: 12px;
 
   }
-  .sorting-from-item a
+  .sorting-from-link svg
   {
-
+    fill: var(--from-to);
   }
 
   .sorting-item a:hover
@@ -1321,17 +1371,17 @@ background-color: var(--social-button-hover);
    font-size: 11px;
    color: var(--from-to);
   }
-  .sort-from:hover
+  .sorting-from-link:hover svg
   {
-   color: var(--basic-black);
+   fill: var(--basic-black);
   }
-  .sort-from:focus
+  .sorting-from-link:focus svg
   {
-   color: var(--basic-blue);
+   fill: var(--basic-blue);
   }
-  .sort-from:active
+  .sorting-from-link:active svg
   {
-   color: var(--basic-blue);
+   fill: var(--basic-blue);
   }
   /*сортировка поиска*/
 
@@ -1472,12 +1522,7 @@ background-color: var(--social-button-hover);
    color: var(--button-visibility);
    background-color: var(--button-active);
   }
-/*
-outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
 
-*/
 
 
 
