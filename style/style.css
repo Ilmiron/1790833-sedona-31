@@ -23,6 +23,7 @@
     --search-shadow: rgba(0, 1, 1, .15);
     --amount-button: #a9a9a9;
     --footer-logo: #bdbbbc;
+    --box-item-color: #333333;
 }
 .page
 {
@@ -30,7 +31,7 @@
 }
 .page-body
 {
-    font-family: 'PT Sans', 'arial';
+    font-family: "PT Sans", "arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -265,7 +266,7 @@ img
 .slogan-site b
 {
     font-size: 21px;
-    line-height: 27px;
+    line-height: 26px;
     /*По макету 42.5 пикселя отступ сверху как так?*/
 
     display: block;
@@ -276,7 +277,8 @@ img
 .slogan-site span
 {
     font-size: 14px;
-    line-height: 29px;
+    line-height: 26px;
+    color: var(--box-item-color);
 
     display: block;
 
@@ -336,6 +338,10 @@ img
 
     text-align: center;
 }
+.block-left span
+{
+  line-height: 21px;
+}
 .block-left p
 {
     line-height: 21px;
@@ -367,6 +373,7 @@ img
     margin: 0;
     padding: 0;
     padding-top: 157px;
+    line-height: 21px;
 }
 .thumb-items p
 {
@@ -515,7 +522,7 @@ padding-top: 56px;
 .block-right span
 {
     display: block;
-
+    line-height: 21px;
     margin-bottom: 21px;
 }
 /*серый блок*/
@@ -544,6 +551,7 @@ padding-top: 56px;
 
     box-sizing: border-box;
     width: 400px;
+
 }
 /* .box-item-1
 {
@@ -566,7 +574,7 @@ padding-top: 56px;
 
     padding-top: 9px;
     padding-bottom: 41px;
-
+    color: var(--box-item-color);
     text-align: center;
 }
 .box-item span
@@ -575,7 +583,7 @@ padding-top: 56px;
     line-height: 21px;
 
     padding-top: 26px;
-
+    color: var(--box-item-color);
     text-align: center;
 }
 /*блок с кнопкой поиска*/
@@ -818,6 +826,7 @@ padding-top: 56px;
     margin: 0;
     padding-top: 0;
     padding-right: 5px;
+    line-height: 21px;
 
     color: var(--basic-white);
     border: none;
@@ -843,8 +852,9 @@ padding-top: 56px;
 
 .range-controls button
 {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    font: inherit;
 
     position: absolute;
     top: 35px;
@@ -863,7 +873,7 @@ padding-top: 56px;
 .box-button b
 {
     font-size: 30px;
-    line-height: 25px;
+    line-height: 24px;
 
     padding-right: 10px;
     padding-bottom: 8px;
@@ -876,7 +886,7 @@ padding-top: 56px;
     line-height: 24px;
 
     padding-bottom: 17px;
-
+   color:  var(--box-item-color);
     text-align: center;
 }
 .button
@@ -937,7 +947,7 @@ padding-top: 56px;
 .search-form
 {
     font-weight: bold;
-    line-height: 21px;
+    line-height: 26px;
 
     position: absolute;
     left: 50%;
@@ -997,6 +1007,7 @@ padding-top: 56px;
     position: absolute;
     top: 63px;
     right: 64px;
+    border: none;
 }
 .entry-calendar svg
 {
@@ -1007,6 +1018,7 @@ padding-top: 56px;
     position: absolute;
     top: 130px;
     right: 64px;
+    border: none;
 }
 .departure-calendar svg
 {
@@ -1037,6 +1049,9 @@ padding-top: 56px;
 {
     width: 30px;
     height: 35px;
+    font: inherit;
+    font-size: 14px;
+    line-height: 26px;
 
     text-align: center;
 
@@ -1110,7 +1125,7 @@ padding-top: 56px;
 .search-button
 {
     font: inherit;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 21px;
 
     width: 100%;
@@ -1610,10 +1625,7 @@ padding-top: 56px;
 /*список*/
 .result
 {
-    display: flex;
-    flex-direction: column;
-
-    width: 1200px;
+  width: 1200px;
 }
 .list-result
 {
@@ -1666,12 +1678,22 @@ padding-top: 56px;
 {
     margin-right: 6px;
 }
+.button-detail span
+{
+  line-height: 21px;
+  color: var(--box-item-color);
+}
+.button-confirm span
+{
+  line-height: 21px;
+  color: var(--box-item-color);
+}
 .button-confirm a
 {
     font-weight: 700;
 
     display: block;
-
+    line-height: 21px;
     width: 142px;
     height: 27px;
     margin-top: 12px;
@@ -1686,7 +1708,7 @@ padding-top: 56px;
 .button-detail a
 {
     font-weight: 700;
-
+    line-height: 21px;
     display: block;
 
     width: 110px;
@@ -1730,6 +1752,7 @@ padding-top: 56px;
     width: 110px;
     height: 27px;
     margin-left: -5px;
+    line-height: 21px;
 
     text-align: center;
 
