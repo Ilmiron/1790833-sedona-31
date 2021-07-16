@@ -35,9 +35,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
-
     display: grid;
-
     min-width: 960px;
     max-width: 1200px;
     min-height: 100%;
@@ -45,12 +43,9 @@
     margin-right: auto;
     margin-left: auto;
     padding: 0;
-
     text-transform: uppercase;
-
     color: var(--basic-black);
     background-color: var(--background-color);
-
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
 }
@@ -64,12 +59,6 @@ img
     max-width: 100%;
     height: auto;
 }
-/*Гриды*/
-
-
-
-/* Навигация*/
-/*лого*/
 .main-header
 {
     width: 1200px;
@@ -92,42 +81,44 @@ img
     margin: 0 auto;
     padding: 0 10px;
 }
-.site-nav
-{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 26px;
-
-    display: flex;
-
-    box-sizing: border-box;
-    width: 1200px;
-    margin: 0;
-    padding: 0;
-    padding-top: 14px;
-    padding-bottom: 15px;
-
-    list-style: none;
-
-    flex-wrap: wrap;
-    align-items: center;
+.site-nav {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  display: flex;
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
 }
-.site-nav-1
-{
-    padding-left: 72px;
+.site-nav-1 {
+  width: 240px;
+  margin-left: 73px;
+  text-align: left;
 }
-.site-nav-2
-{
-    margin-right: 418px;
-    padding-left: 134px;
+.site-nav-2 {
+  width: 240px;
+  margin-left: -12px;
+  text-align: left;
 }
-.site-nav-3
-{
-    padding-left: 1px;
+.site-nav-3 {
+  width: 240px;
+  margin-left: 121px;
+  text-align: right;
 }
-.site-nav-4
-{
-    padding-left: 147px;
+.site-nav-4 {
+  width: 240px;
+  text-align: right;
+  margin-left: -14px;
+}
+.site-nav .item-active {
+  color: var(--button);
 }
 .header-logo
 {
@@ -139,48 +130,31 @@ img
     display: block;
 
     margin-right: -69px;
-    /*
-логотип плавает
-*/
 }
-/* .site-nav-3 {
-  padding-left: 418px;
-} */
-
 .site-nav a
 {
     color: var(--basic-black);
 }
+
 .site-nav a:hover
 {
     color: var(--basic-blue);
 }
-.site-nav a:focus
-{
-    color: var(--button);
-}
-
 .site-nav a:active
 {
     color: var(--basic-black-opacity);
 }
 
+.site-nav a:focus
+{
+    color: var(--button);
+}
 
-/* .sort-from:hover
-наведение
-{
- color: var(--basic-black);
-}
-.sort-from:focus
-выбранный
-{
- color: var(--basic-blue);
-}
-.sort-from:active
-нажатие
-{
- color: var(--basic-blue);
-} */
+
+
+
+
+
 .visually-hidden
 {
     position: absolute;
@@ -199,9 +173,6 @@ img
 
     clip-path: inset(100%);
 }
-/*шапка*/
-
-/*Тело*/
 .title-img
 {
     position: relative;
@@ -251,8 +222,6 @@ img
 
 .slogan-site
 {
-    /*
-  padding-bottom: 51px;*/
     box-sizing: border-box;
     width: 1200px;
     margin: 0;
@@ -262,18 +231,16 @@ img
 
     background-color: var(--basic-white);
 }
-
-.slogan-site b
-{
-    font-size: 21px;
-    line-height: 26px;
-    /*По макету 42.5 пикселя отступ сверху как так?*/
-
-    display: block;
-
-    margin-bottom: 12px;
-    padding-top: 43px;
+.slogan-site b {
+  font-size: 21px;
+  line-height: 26px;
+  display: block;
+  padding-top: 44px;
+  padding-bottom: 43px;
+  margin-left: 380px;
+  margin-right: 380px;
 }
+
 .slogan-site span
 {
     font-size: 14px;
@@ -282,10 +249,9 @@ img
 
     display: block;
 
-    padding-bottom: 50px;
+    padding-bottom: 52px;
 }
 
-/*синий блок слева*/
 .block-l
 {
     display: grid;
@@ -306,9 +272,6 @@ img
     padding-top: 46px;
     padding-right: 47px;
     padding-bottom: 54px;
-    /* НИЖЕ Паддинги не по макету почему то спан не умещается
-  нужно спросить
-  по макету 49 пх*/
     padding-left: 47px;
 
     text-align: center;
@@ -364,7 +327,9 @@ img
     display: flex;
     flex-direction: column;
 
-    width: 400px;
+    width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     text-align: center;
 }
@@ -372,17 +337,16 @@ img
 {
     margin: 0;
     padding: 0;
-    padding-top: 157px;
+    padding-top: 159px;
     line-height: 21px;
 }
-.thumb-items p
-{
-    line-height: 21px;
-
-    margin: 0;
-    padding: 0;
-    padding-top: 24px;
-    padding-bottom: 81px;
+.thumb-items p {
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  padding-bottom: 82px;
+  color: var(--box-item-color);
 }
 
 .thumb-items:nth-child(1) .icon-svg
@@ -419,53 +383,6 @@ img
     background-image: url(../img/icon3.svg);
     background-repeat: no-repeat;
 }
-/*
-{ box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  text-align: center;
-  align-items: center;
-
-}
-Как поступить с иконками?
-.icon-svg {
-
-  padding-bottom: 28px;
-}
-.thumb-item {
-
- flex-grow: 1;
-
-}
-.thumb-item p {
-box-sizing: border-box;
-display: block;
-margin: 0;
-padding: 0;
-}
-.thumb-item h2 {
-  margin: 0;
-  padding: 0;
-  }
-.icon-svg-1
-{
-padding-top: 60px;
-}
-.icon-svg-2
-{
-padding-top: 61px;
-}
-.icon-svg-3
-{
-padding-top: 56px;
-} */
-
-/* Синий блок справа*/
 
 .block-r
 {
@@ -507,34 +424,31 @@ padding-top: 56px;
     margin: 0;
     padding: 0;
 }
+.block-right b {
+  font-size: 21px;
+  line-height: 21px;
+  display: block;
 
-.block-right b
-{
-    font-size: 21px;
-    line-height: 21px;
-
-    display: block;
-
-    margin-bottom: 23px;
-
-    text-align: center;
+  margin-left: 75px;
+  margin-right: 76px;
+  text-align: center;
 }
+
+
 .block-right span
 {
     display: block;
+    padding-top: 27px;
     line-height: 21px;
     margin-bottom: 21px;
 }
-/*серый блок*/
 .box-list
 {
     display: flex;
-    /* align-items: center; */
 
     box-sizing: border-box;
     width: 1200px;
     margin: 0;
-    /* height: 256px; */
     padding: 0;
 
     list-style: none;
@@ -545,7 +459,6 @@ padding-top: 56px;
 }
 .box-item
 {
-    /* flex-grow: 1; */
     display: flex;
     flex-direction: column;
 
@@ -553,19 +466,14 @@ padding-top: 56px;
     width: 400px;
 
 }
-/* .box-item-1
-{
-  margin-left: 30px;
-} */
 
-.box-item b
-{
-    font-size: 21px;
-    line-height: 21px;
-
-    padding-top: 47px;
-
-    text-align: center;
+.box-item b {
+  font-size: 21px;
+  line-height: 21px;
+  padding-top: 47px;
+  text-align: center;
+  width: 160px;
+  padding-left: 120px;
 }
 .box-item p
 {
@@ -586,7 +494,18 @@ padding-top: 56px;
     color: var(--box-item-color);
     text-align: center;
 }
-/*блок с кнопкой поиска*/
+.box-item-1 p
+{
+  width: 400px;
+}
+.box-item-2 p {
+  width: 280px;
+  padding-left: 60px;
+}
+.box-item-3 p {
+  width: 250px;
+  padding-left: 76px;
+}
 .button
 {
     width: 586px;
@@ -642,17 +561,14 @@ padding-top: 56px;
 
     background-image: url(../img/checkbox-on.svg);
 }
-.filter-input-checkbox:disabled + label::before
+.filter-input-checkbox:checked:disabled + label::before
 {
     position: absolute;
     top: 0;
     left: -40px;
-
     width: 26px;
     height: 23px;
-
     content: '';
-
     background-image: url(../img/checkbox-on-disabled.svg);
     background-repeat: no-repeat;
 }
@@ -661,12 +577,9 @@ padding-top: 56px;
     position: absolute;
     top: 0;
     left: -40px;
-
     width: 26px;
     height: 23px;
-
     content: '';
-
     background-image: url(../img/checkbox-off-disabled.svg);
     background-repeat: no-repeat;
 }
@@ -745,21 +658,18 @@ padding-top: 56px;
 
     width: 316px;
 }
-.range-controls .scale
-{
-    height: 2px;
-    margin-top: 20px;
-    padding-right: 73px;
-
-    background: var(--basic-white);
+.range-controls .scale {
+  height: 2px;
+  width: 183px;
+  margin-top: 20px;
+  padding-right: 73px;
+  background: var(--basic-white);
 }
-.range-controls .bar
-{
-    width: 80%;
-    height: 2px;
-
-    background: var(--background-color-opacity);
-    /* не работает  почему? */
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: var(--background-color-opacity);
+  padding-left: 170px;
 }
 .range-controls .toggle
 {
@@ -841,12 +751,8 @@ padding-top: 56px;
 {
     display: flex;
     flex-direction: column;
-    /* grid-template-rows: 1fr 1fr; */
-
     padding-top: 55px;
-
     text-align: center;
-
     background-color: var(--basic-white);
 }
 
@@ -860,7 +766,7 @@ padding-top: 56px;
     top: 35px;
     right: 95px;
 
-    padding: 6px 32px;
+    padding: 3px 33px;
 
     cursor: pointer;
     text-transform: uppercase;
@@ -874,39 +780,31 @@ padding-top: 56px;
 {
     font-size: 30px;
     line-height: 24px;
-
     padding-right: 10px;
-    padding-bottom: 8px;
-
+    padding-bottom: 34px;
     text-align: center;
 }
-.box-button span
-{
-    font-size: 14px;
-    line-height: 24px;
-
-    padding-bottom: 17px;
-   color:  var(--box-item-color);
-    text-align: center;
+.box-button span {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--box-item-color);
+  text-align: center;
 }
-.button
-{
-    font: inherit;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-
-    width: 568px;
-    height: 86px;
-    margin-left: 316px;
-
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-
-    color: var(--basic-white);
-    border: none;
-    background-color: var(--button);
+.button {
+  font: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  width: 568px;
+  height: 86px;
+  margin-left: 316px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  border: none;
+  background-color: var(--button);
+  margin-top: 43px;
 }
 .button:hover
 {
@@ -931,18 +829,6 @@ padding-top: 56px;
     outline: 2px solid var(--bottom);
     background-color: var(--basic-white);
 }
-/* .range-controls .toggle:hover
-{
-
-}
-
-.map
-{
-  display: flex;
-  position: relative;
-  /* width: 1200px;
-  height: 594px; */
-
 
 .search-form
 {
@@ -959,55 +845,50 @@ padding-top: 56px;
     height: 395px;
     margin-left: -284px;
     padding: 55px;
-
     background-color: var(--basic-white);
     box-shadow: var(--search-shadow);
-
     flex-wrap: wrap;
     align-content: space-between;
     align-items: center;
 }
-
 .search-form .departure
 {
     padding-bottom: 20px;
 }
-.search-form input[name='date-of-entry']
-{
-    font: inherit;
-
-    width: 331px;
-    height: 35px;
-    margin-left: 23px;
-    padding-left: 13px;
-
-    text-transform: uppercase;
-
-    border: none;
-    background-color: var(--background-color);
+.search-form input[name="date-of-entry"] {
+  width: 327px;
+  height: 31px;
+  background-color: var(--background-color);
+  border: none;
+  text-transform: uppercase;
+  font: inherit;
+  padding-left: 13px;
+  margin-left: 23px;
+  border: 2px solid var(--background-color);
+  cursor: pointer;
 }
-.search-form input[name='date-of-departure']
-{
-    font: inherit;
-
-    width: 331px;
-    height: 35px;
-    margin-bottom: 19px;
-    margin-left: 20px;
-    padding-left: 13px;
-
-    text-transform: uppercase;
-
-    border: none;
-    background-color: var(--background-color);
+.search-form input[name="date-of-departure"] {
+  width: 329px;
+  height: 31px;
+  background-color: var(--background-color);
+  border: none;
+  text-transform: uppercase;
+  font: inherit;
+  margin-bottom: 19px;
+  margin-left: 20px;
+  padding-left: 11px;
+  border: 2px solid var(--background-color);
+  cursor: pointer;
 }
+
 
 .entry-calendar
 {
     position: absolute;
-    top: 63px;
-    right: 64px;
+    top: 62px;
+    right: 58px;
     border: none;
+    background: inherit;
 }
 .entry-calendar svg
 {
@@ -1017,8 +898,9 @@ padding-top: 56px;
 {
     position: absolute;
     top: 130px;
-    right: 64px;
+    right: 58px;
     border: none;
+    background: inherit;
 }
 .departure-calendar svg
 {
@@ -1036,6 +918,10 @@ padding-top: 56px;
     justify-content: space-between;
     align-items: center;
 }
+.amount label
+{
+  padding-top: 1px;
+}
 .amount button
 {
     width: 40px;
@@ -1045,18 +931,17 @@ padding-top: 56px;
     border: none;
     background-color: var(--background-color);
 }
-.amount input
-{
-    width: 30px;
-    height: 35px;
-    font: inherit;
-    font-size: 14px;
-    line-height: 26px;
-
-    text-align: center;
-
-    border: none;
-    background-color: var(--background-color);
+.amount input {
+  width: 26px;
+  height: 31px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  border: none;
+  background-color: var(--background-color);
+  border: 2px solid var(--background-color);
+  cursor: pointer;
 }
 .button-minus-adults
 {
@@ -1141,32 +1026,22 @@ padding-top: 56px;
 
 
 
-/*футер*/
 .main-footer
 {
-    /* padding: 36px 0; */
     position: absolute;
-    bottom: 0;
-
+    bottom: 7px;
     display: flex;
-
     box-sizing: border-box;
     width: 1200px;
     height: 120px;
-
     background-color: var(--foother-color);
-
     align-self: center;
     justify-content: space-between;
 }
 .main-footer-catalog
 {
-    /* padding: 36px 0; */
-    /* position: absolute; */
-    bottom: 0;
-
+    bottom: 0px;
     display: flex;
-
     box-sizing: border-box;
     width: 1200px;
     height: 120px;
@@ -1207,8 +1082,6 @@ padding-top: 56px;
     align-items: center;
     justify-content: center;
 
-    /* outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px; */
 }
 .footer-logo
 {
@@ -1233,14 +1106,6 @@ padding-top: 56px;
     padding-bottom: 2px;
 }
 
-/*.footer
-{
-  outline: 5px solid green;
-  outline-offset: -5px;
-  margin: 0;
-  padding: 0;
-
-}*/
 .contact-tel
 {
     font-size: 21px;
@@ -1310,7 +1175,6 @@ padding-top: 56px;
 
     width: 46px;
     height: 48px;
-    /* margin-top: 10px; */
     margin-right: 6px;
 
     background-color: var(--basic-blue);
@@ -1319,7 +1183,24 @@ padding-top: 56px;
 {
     margin-right: 0;
 }
-/*  Действия */
+.search-form input[name="date-of-entry"]:focus {
+  outline: none;
+  background-color: var(--basic-white);
+  border: 2px solid var(--bottom);
+}
+.search-form input[name="date-of-departure"]:focus {
+  outline: none;
+  background-color: var(--basic-white);
+  border: 2px solid var(--bottom);
+
+}
+.amount input:focus
+{
+  outline: none;
+  background-color: var(--basic-white);
+  border: 2px solid var(--bottom);
+
+}
 .button-minus-adults:hover svg
 {
     fill: var(--basic-black);
@@ -1413,7 +1294,6 @@ padding-top: 56px;
 {
     background-color: var(--social-button-active);
 }
-/*логотип в футере*/
 .footer-logo-link:hover svg
 {
     fill: var(--basic-blue);
@@ -1422,9 +1302,6 @@ padding-top: 56px;
 {
     fill: var(--footer-logo);
 }
-/*каталог*/
-
-/*чекбоксы*/
 .filter
 {
     display: grid;
@@ -1479,7 +1356,6 @@ padding-top: 56px;
     color: var(--basic-white);
     background: none;
 }
-/*слайдер*/
 .price-button
 {
     font: inherit;
@@ -1501,7 +1377,6 @@ padding-top: 56px;
     color: var(--basic-black);
     background-color: var(--basic-white);
 }
-/*сортировка поиска*/
 .sort
 {
     display: flex;
@@ -1549,6 +1424,12 @@ padding-top: 56px;
 
     color: var(--basic-black);
 }
+.sorting-list .item-active
+{
+   color: var(--basic-blue);
+   border-bottom: none;
+   opacity: 1;
+}
 .sorting-item
 {
     padding-right: 33px;
@@ -1581,7 +1462,10 @@ padding-top: 56px;
 {
     fill: var(--from-to);
 }
-
+.item-active svg
+{
+  fill: var(--basic-blue);
+}
 
 .sorting-item a:hover
 {
@@ -1620,22 +1504,16 @@ padding-top: 56px;
 {
     fill: var(--basic-blue);
 }
-/*сортировка поиска*/
-
-/*список*/
 .result
 {
   width: 1200px;
 }
 .list-result
 {
-    /* padding-bottom: 27px; */
     display: flex;
 
     width: auto;
     height: 150px;
-    /* padding-left: 73px; */
-    /* padding-top: 24px; */
     padding-left: 73px;
 
     border-bottom: 1px solid var(--bottom);
@@ -1688,38 +1566,30 @@ padding-top: 56px;
   line-height: 21px;
   color: var(--box-item-color);
 }
-.button-confirm a
-{
-    font-weight: 700;
-
-    display: block;
-    line-height: 21px;
-    width: 142px;
-    height: 27px;
-    margin-top: 12px;
-    padding: 0;
-
-    text-align: center;
-
-    color: var(--basic-white);
-    background-color: var(--button);
+.button-confirm a {
+  font-weight: 700;
+  display: block;
+  line-height: 21px;
+  width: 142px;
+  height: 24px;
+  margin-top: 12px;
+  padding-top: 3px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--button);
 }
 
-.button-detail a
-{
-    font-weight: 700;
-    line-height: 21px;
-    display: block;
-
-    width: 110px;
-    height: 27px;
-    /* padding: 3px 17px; */
-    margin-top: 12px;
-
-    text-align: center;
-
-    color: var(--basic-white);
-    background-color: var(--basic-blue);
+.button-detail a {
+  font-weight: 700;
+  line-height: 21px;
+  display: block;
+  width: 110px;
+  height: 24px;
+  padding-top: 3px;
+  margin-top: 12px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
 }
 .rating
 {
@@ -1750,7 +1620,8 @@ padding-top: 56px;
 .rating-figure
 {
     width: 110px;
-    height: 27px;
+    height: 23px;
+    padding-top: 4px;
     margin-left: -5px;
     line-height: 21px;
 
